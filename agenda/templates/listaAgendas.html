@@ -1,0 +1,16 @@
+<html>
+<head>
+<title> Lista </title>
+</head>
+<body>
+	{% if agendas %}
+	<ul> <h3>Agendas cadastradas:</h3>
+		{% for i in agendas %}
+			<li>{{i}}</li>
+		{% endfor %}
+	</ul>
+	{% else %}
+		<h3>Não foi encontrado nenhum registro de Agenda</h3>
+	{% endif %}
+</body>
+</html>

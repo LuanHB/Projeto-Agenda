@@ -1,0 +1,16 @@
+<html>
+<head>
+<title> Lista </title>
+</head>
+<body>
+	{% if compromissos %}
+	<ul> <h3>Compromisos cadastrados:</h3>
+		{% for i in compromissos %}
+			<li>{{i}}</li>
+		{% endfor %}
+	</ul>
+	{% else %}
+		<h3>Não foi encontrado nenhum registro de compromisso na Agenda Institucional</h3>
+	{% endif %}
+</body>
+</html>
